@@ -1,7 +1,13 @@
+import TextBlockHome from "./components/TextBlockHome";
+import NextHead from "./components/Head";
+import HomeStyled from "./components/styled/HomeStyled";
+
 export default function Home() {
   return (
-    <div>
-      <p>hello</p>
-    </div>
+    <HomeStyled>
+      <NextHead />
+      <TextBlockHome />
+      <img src="assets/img.svg" className="image" />
+    </HomeStyled>
   );
 }

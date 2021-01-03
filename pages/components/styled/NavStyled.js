@@ -3,7 +3,6 @@ import media from "../../../styles/media";
 
 const NavStyled = styled.div`
   display: flex;
-  position: absolute;
   width: 100vw;
   height: 4rem;
   background: #575a89;
@@ -22,6 +21,7 @@ const NavStyled = styled.div`
   font-size: 24px;
   color: #e6e6e6;
   .home {
+    display: flex;
     margin-left: 5rem;
     user-select: none;
     ${media.phone`
