@@ -1,8 +1,9 @@
 import TextBlockHome from "./components/TextBlockHome";
 import NextHead from "./components/Head";
 import HomeStyled from "./components/styled/HomeStyled";
+import React from 'react'
 
-export default function Home() {
+function Home() {
   return (
     <HomeStyled>
       <NextHead />
@@ -11,3 +12,5 @@ export default function Home() {
     </HomeStyled>
   );
 }
+
+export default Home;
