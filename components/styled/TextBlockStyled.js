@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import media from "../../../styles/media";
 
 const TextContainer = styled.div`
   /* margin: 10rem 0 0 8rem; */
@@ -120,5 +119,5 @@ const Button = styled.button`
     font-size: 1rem;
   }
 `;
-const Payload = { TextContainer, MediaContainer, Button };
-export default Payload;
+
+export { TextContainer, MediaContainer, Button };

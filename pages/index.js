@@ -1,6 +1,6 @@
-import TextBlockHome from "./components/TextBlockHome";
-import NextHead from "./components/Head";
-import HomeStyled from "./components/styled/HomeStyled";
+import TextBlockHome from ".././components/TextBlockHome";
+import NextHead from ".././components/Head";
+import HomeStyled from ".././components/styled/HomeStyled";
 
 function Home() {
   return (

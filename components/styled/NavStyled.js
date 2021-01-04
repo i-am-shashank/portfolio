@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import media from "../../../styles/media";
 
 const NavStyled = styled.div`
   display: flex;
@@ -8,11 +7,6 @@ const NavStyled = styled.div`
   background: #575a89;
   border-radius: 0 0 0 64px;
 
-  ${media.phone`
-  height: 2.8rem;
-  font-weight: 400;
-  font-size: 1.2rem;
-  `}
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -24,9 +18,6 @@ const NavStyled = styled.div`
     display: flex;
     margin-left: 5rem;
     user-select: none;
-    ${media.phone`
-      margin-left: 2.8rem
-    `}
   }
   .container {
     display: flex;
@@ -34,15 +25,11 @@ const NavStyled = styled.div`
     justify-content: space-around;
     width: 100%;
     user-select: none;
-    ${media.tablet`
-    margin-left: 40rem;
-    `}
+
     @media (max-width: 1100px) {
       margin-left: 20rem;
     }
-    ${media.phone`
-      display: none;
-    `}
+
   }
   .position {
     /* position: relative; */
@@ -57,9 +44,7 @@ const NavStyled = styled.div`
   }
   .BiMenu {
     visibility: hidden;
-    ${media.phone`
-      visibility: visible;
-    `}
+
     position: absolute;
     align-self: center;
     right: 1rem;

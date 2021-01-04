@@ -1,8 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import Payload from "./styled/TextBlockStyled";
-const { TextContainer, MediaContainer, Button }= Payload;
+import {
+  TextContainer,
+  MediaContainer,
+  Button,
+} from "./styled/TextBlockStyled";
+
 const downloadCV = () => {
   console.log("download handler");
 };
