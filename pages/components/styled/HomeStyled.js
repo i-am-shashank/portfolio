@@ -9,6 +9,25 @@ const Home = styled.div`
   .image {
     height: 32rem;
   }
+  @media (max-width: 1000px) {
+    .image {
+      display: none;
+    }
+  }
+  .imgmob {
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10rem;
+    align-self: flex-start;
+  }
+
+  @media (min-width: 1000px) {
+    .imgmob {
+      display: none;
+    }
+  }
   background: linear-gradient(
       0deg,
       rgba(87, 90, 137, 0.78) 0%,

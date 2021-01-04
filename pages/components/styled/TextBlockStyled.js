@@ -49,12 +49,27 @@ const TextContainer = styled.div`
     text-decoration: none;
     border: none;
   }
+  @media (max-width: 1200px) {
+    .helloIam {
+      font-size: 1.5rem;
+    }
+    .name {
+      font-size: 4rem;
+      line-height: 5.8rem;
+    }
+    .lowerText {
+      font-size: 1.5rem;
+    }
+    .textLast {
+      font-size: 1rem;
+    }
+  }
 `;
 const MediaContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 8rem;
+  margin-top: 4rem;
   .social {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -72,9 +87,15 @@ const MediaContainer = styled.div`
   .iconHover:hover {
     color: #575a89;
   }
+  @media (max-width: 1200px) {
+    .social {
+      font-size: 1.5rem;
+    }
+  }
 `;
 const Button = styled.button`
   display: flex;
+  /* justify-content: center; */
   padding: 0.6rem;
   width: auto;
   height: 48px;
@@ -92,6 +113,12 @@ const Button = styled.button`
   text-shadow: ${(props) =>
     props.secondary && "0px 0px 3px rgba(0, 0, 0, 0.25)"};
   color: ${(props) => (props.primary ? "#e6e6e6" : "#575A89")};
+  @media (max-width: 1200px) {
+    height: 32px;
+    padding: 0rem 0.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+  }
 `;
 
-export { TextContainer, MediaContainer, Button };
+export default { TextContainer, MediaContainer, Button };
