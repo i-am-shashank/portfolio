@@ -120,5 +120,5 @@ const Button = styled.button`
     font-size: 1rem;
   }
 `;
-
-export default { TextContainer, MediaContainer, Button };
+const Payload = { TextContainer, MediaContainer, Button };
+export default Payload;
